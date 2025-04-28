@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 80px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+}
+.nav-logo{
+    height: 70px;
+    width: 100px;
+    margin:0px;
+    padding: 0%;
+}
+.logo{
+    background-image: url(data:image/png;base64,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);
+ height: 70px;
+ background-size: cover;
+ width: 100%; 
+ 
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+.nav-add{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.add-icon{
+    display: flex;
+}
+.add-1st{
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+/** styling box3 **/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width:620px;
+    height:40px;
+    border-color:white;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: center;
+    border-color:white;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+.search-input{
+    width:100%;
+    font: 1rem;
+    border-color:white;
+
+}
+
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #febd68;
+    color:#0f1111;
+}
+.nav-search:hover{
+   border: 2px solid #febd68;
+     
+}
+
+span{
+    font-size: 0.85rem;
+}
+.nav-sec{
+    font-size: 0.85rem;
+    font-weight: 700;
+
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+     font-weight: 700;
+}
+.nav-cart i{
+    font-size: 35px;
+   color:#f3f3f3
+}
+
+.panel{
+    height: 39px;
+    background-color: #222f3d;
+    display: flex;
+    color: #ccc;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+.panel p{
+    display: inline;
+    margin: 15px;
+}
+.panel-1{
+    padding: 0%;
+    text-align: left;
+}
+.panel-2{
+    width:90%;
+}
+
+
+.main-section{
+    background-image: url(61A-FJoXloL._SX3000_.jpg);
+    height: 400px;
+    background-size: cover;
+
+}
+.main-section-1{
+    margin-left:40px;
+    margin-right: 40px;
+   height:40px;
+    background-color: white;
+    color: #0f1111;
+    position: relative;
+    top:340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.explore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+   /* border: 2px solid black;*/
+    height: 400px;
+    width: 23%;
+    background-color: #ffffff;
+    margin-top:15px;
+    padding:20px 0px 15px
+   
+}
+.content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-img{
+    height:300px;
+    background-image: url(download.jpg);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+footer{
+    margin-top:15px;
+}
+.foot-pannel1{
+    
+    background-color: #37475a;
+    color:white;
+    height:50px;
+    width:12512;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+    .foot-pannel2{
+        background-color: #222f3d;
+        color: white;
+        height:300px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    ul{
+        margin-top: 20px;
+    }
+   ul a{
+   
+        color: white;
+        text-decoration: none;
+        display: block;
+        
+        margin-top: 10px;
+        font-size: 0.85rem;
+        color: #dddd;
+    }
+    @keyframes moveText {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Apply the fadeInUp animation and moveText animation to the main-section-1 */
+    .main-section-1 {
+        animation: fadeInUp 1s ease-out, moveText 10s linear infinite;
+        font-size: 20px;
+        color: #333;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden; /* Hide overflowing text */
+    }
+    
+ 
